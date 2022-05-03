@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="header-container">
+    <h1>traditional library</h1>
+    <button>Log in</button>
+    </div>
+    <div class="main-container">
+        <div class="newbook">
+    <button data-modal-target="#modal">
+        New Book
+    </button>
+    </div>
+    <div class="bookshelve">
+            
+    </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Add new book</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" id="title" name="book_title" placeholder="Title"/><br>
+                        </li>
+                        <li>
+                            <input type="text" id="author" name="book_author" placeholder="Author"/><br>
+                        </li>
+                        <li>
+                            <input type="number" id="pages" name="book_pages" placeholder="Pages"/><br>
+                        </li>
+                    </ul>
+                    <br>
+                    <input type="checkbox" id="checkbox" name="book_status">
+                    <label for="checkbox">Have you read the book?</label>
+                    <br>
+                </form>
+                <div class="submitBox"><button id="submit">Submit</button></div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
